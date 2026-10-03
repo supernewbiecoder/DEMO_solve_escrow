@@ -1,0 +1,9 @@
+>> solana-keygen new --no-bip39-passphrase
+Generating a new keypair
+Wrote new keypair to C:\Users\Admin\.config\solana\id.json
+==================================================================================
+pubkey: 4HHPoLtgwS5EZCU5vccvoVw56D7En6fwMTwQw74kHm81
+==================================================================================
+Save this seed phrase to recover your new keypair:
+priority beauty donate drive ordinary soldier orient flame rib below balance slide
+==================================================================================

@@ -1,0 +1,40 @@
+# ---------- Rust / Anchor ----------
+# Thư mục build. Chứa cả target/deploy/solva-keypair.json (khóa chương trình):
+# KHÔNG commit, nhưng phải giữ bản sao riêng (xem README).
+target/
+native-tests/target/
+.anchor/
+test-ledger/
+**/*.rs.bk
+
+# Mọi file khóa ví / khóa chương trình
+*-keypair.json
+keypair*.json
+id.json
+
+# ---------- Web app ----------
+node_modules/
+app/dist/
+app/.vite/
+*.local
+
+# Cấu hình do `npm run setup:devnet` sinh ra (có khóa đúc USDC thử nghiệm).
+# Bản mẫu để commit: app/src/config.example.json
+app/src/config.json
+
+# ---------- Biến môi trường, log ----------
+.env
+.env.*
+!.env.example
+*.log
+npm-debug.log*
+
+# ---------- Hệ điều hành, editor ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+*:Zone.Identifier
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp

@@ -1,0 +1,35 @@
+{
+  "name": "solva-app",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "setup:devnet": "node scripts/setup.mjs devnet",
+    "setup:localnet": "node scripts/setup.mjs localnet"
+  },
+  "dependencies": {
+    "@solana/spl-token": "^0.4.13",
+    "@solana/wallet-adapter-base": "^0.9.27",
+    "@solana/wallet-adapter-phantom": "^0.9.28",
+    "@solana/wallet-adapter-react": "^0.15.39",
+    "@solana/wallet-adapter-react-ui": "^0.9.39",
+    "@solana/web3.js": "^1.98.4",
+    "buffer": "^6.0.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.23",
+    "@types/react-dom": "^18.3.7",
+    "@vitejs/plugin-react": "^4.7.0",
+    "typescript": "~5.8.3",
+    "vite": "^6.3.5"
+  },
+  "overrides": {
+    "@types/react": "^18.3.23",
+    "@types/react-dom": "^18.3.7"
+  }
+}

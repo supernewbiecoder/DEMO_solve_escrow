@@ -1,0 +1,22 @@
+# Test chạy toàn bộ kịch bản demo trên ngân hàng Solana cục bộ (không cần validator).
+# Tách khỏi workspace chính để bộ dependency nặng của solana-program-test
+# không ảnh hưởng tới `anchor build`.
+#
+#   cd native-tests && cargo test -- --nocapture
+[package]
+name = "solva-native-tests"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[workspace]
+
+[dependencies]
+solva = { path = "../programs/solva" }
+anchor-lang = { version = "0.31.1", features = ["init-if-needed"] }
+anchor-spl = "0.31.1"
+
+[dev-dependencies]
+solana-program-test = "2.2"
+solana-sdk = "2.2"
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
